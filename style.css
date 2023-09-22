@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:rgb(53, 11, 94)
+}
+h1{
+    color:white;
+    text-align: center;
+    font-size:23px;
+    margin-top:30px;
+    font-weight: 800;
+}
+.container{
+    background-color: rgb(125, 74, 173);
+    width:600px;
+    height:60px;
+    margin:40px auto 70px;
+    padding:10px;
+    display:flex;
+    align-items: center;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+}
+.input-box{
+    flex:1;
+    padding:5px;
+    font-size: 18px;
+    margin:6;
+    border:0;
+    outline:0;
+    height:90%;
+    background:transparent;
+    color:whitesmoke;
+    padding-left: 20px;
+}
+::placeholder{
+    font-size: 16px;
+    color:white;
+}
+#search-result{
+    width:80%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:30px;
+    margin:10px auto 100px;
+}
+#search-result img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#search-btn{
+    padding:0px 30px;
+    height:100%;
+    background-color:#f50c0c;
+    color:white;
+    font-size: 15px;
+    border:0;
+    outline:0;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+#show-more-btn{
+    background-color: #f50c0c;
+    color:white;
+    outline:0;
+    border:0;
+    padding:10px 20px;
+    font-size: 15px; 
+    margin:10px auto 100px;
+    cursor:pointer;
+    display:none;
+}
+@media only screen and (min-width:321px) and (max-width:480px){
+    body{
+        background-color:hsl(0, 0%, 0%);
+    }
+    h1{
+        color:rgb(253, 253, 253);
+        text-align: center;
+        font-size: 18px;
+    }
+    .container{
+    background-color: rgb(180, 166, 166);
+    width:369px;
+    height:40px;
+    padding:10px;
+    margin-left:10px;
+    display:flex;
+    align-items: center;
+    border-radius:28px;
+}
+#search-btn {
+    padding: 0px 6px;
+    width: 20%;
+    height: 135%;
+    background-color: #f50c0c;
+    color: white;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    font-size: 12px;
+}
+#search-result{
+    width:80%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:25px;
+    margin:10px auto 100px;
+}
+#search-result img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+}
